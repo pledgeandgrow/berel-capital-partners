@@ -1,12 +1,12 @@
-"use client"
+
 
 import React from 'react'
-import { useState } from 'react';
+
 
 
 const ConsultationForm = () => {
 
-    const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  
   return (
     <section className="py-20 px-4 bg-pearl">
     <div className="container mx-auto max-w-2xl">
@@ -32,7 +32,7 @@ const ConsultationForm = () => {
               <select
                 className="w-full h-10 rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-silk border-velvet text-onyx"
               >
-                <option value="advisory">Select a service:</option>
+                <option value="advisory">Select a service</option>
                 <option value="advisory">Comprehensive Financial Advisory</option>
                 <option value="debt-reconstruction">Strategic Debt Reconstruction</option>
                 <option value="wealth-management">Wealth Management</option>

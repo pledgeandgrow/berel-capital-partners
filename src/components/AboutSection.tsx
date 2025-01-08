@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section className="py-20 px-4 ">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row items-center items-center">
+        <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
             <Image
               alt="About Berel Capital Partners"

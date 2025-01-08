@@ -1,4 +1,6 @@
 import React from "react";
+import Link from 'next/link';
+
 
 const Navbar = () => {
     return (
@@ -6,9 +8,9 @@ const Navbar = () => {
             className="fixed w-full z-10 bg-onyx/80 backdrop-blur-sm border-b border-silk/10"
         >
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <a href="/MeetingForm" className="text-2xl font-bold text-silk">
+                <Link href="/MeetingForm" className="text-2xl font-bold text-silk">
                     B.C.P
-                </a>
+                </Link>
                 <button
                     className="inline-flex items-center justify-center gap-2 whitespace-nowrap 
                     rounded-md text-sm font-medium ring-offset-background transition-colors 
