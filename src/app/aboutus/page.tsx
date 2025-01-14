@@ -1,17 +1,17 @@
-"use client"; // Use this only if you're working in Next.js app directory
-import ServicesSection from "@/components/ServicesSection";
+"use client"
+
 import React, { useState } from "react";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function HomePage() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  function openAccordion(index) {
+  function openAccordion(index: number) {
     setActiveIndex(activeIndex === index ? null : index);
   }
 
   return (
-    <main className="text-black ">
-      {/* Hero Section */}
+    <main className="text-black">
       <section className="h-screen flex flex-col justify-center items-center text-center">
         <h1 className="text-5xl font-bold">OUR IDENTITY</h1>
         <p className="mt-4 text-xl max-w-3xl">
@@ -38,7 +38,6 @@ export default function HomePage() {
         </p>
       </section>
 
-
       {/* Accordion Section */}
       <section className="h-screen flex flex-col justify-center items-center section-padding bg-gray-100">
         <div className="container mx-auto px-4">
@@ -62,7 +61,7 @@ export default function HomePage() {
                     content:
                       "True to our commitments, we offer exclusive services in every industry, ensuring solid partnerships that are free from any conflict of interest.",
                   },
-                ].map((item, index) => (
+                ].map((item, index: number) => (
                   <div
                     key={index}
                     className="accordion-item border rounded-lg shadow-sm"
