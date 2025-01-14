@@ -23,16 +23,34 @@ const Footer = () => {
         </div>
         <nav className="flex flex-wrap justify-center md:justify-end gap-6">
           <Link
-            href="/privacy-policy"
+            href="/personaldata"
             className="text-sm text-pearl hover:text-silk transition-colors"
           >
-            Privacy Policy
+            Personal data
           </Link>
           <Link
-            href="/terms-of-service"
+            href="/legalnotice"
             className="text-sm text-pearl hover:text-silk transition-colors"
           >
-            Terms of Service
+            Legal notice
+          </Link>
+          <Link
+            href="/generalcondition"
+            className="text-sm text-pearl hover:text-silk transition-colors"
+          >
+           General conditions
+          </Link>
+          <Link
+            href="/aboutus"
+            className="text-sm text-pearl hover:text-silk transition-colors"
+          >
+           About us
+          </Link>
+          <Link
+            href="/contact"
+            className="text-sm text-pearl hover:text-silk transition-colors"
+          >
+           Contact us
           </Link>
         </nav>
         <div className="flex space-x-6 mt-6 md:mt-0">
